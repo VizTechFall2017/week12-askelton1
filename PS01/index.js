@@ -140,7 +140,7 @@ svg.append('text')
     .attr('font-size','36');
 
 svg.append('text')
-    .text('Recreational Laws:')
+    .text('Recreational Laws: [year]')
     //.text(function(d){return d.properties.dataRec;})
     .attr('x', 775)
     .attr('y', 115)
@@ -148,7 +148,7 @@ svg.append('text')
 
 
 svg.append('text')
-    .text('Medicinal Laws: ')
+    .text('Medicinal Laws: [year] ')
     //.text(function(d){return d.properties.STATE;})
     .attr('x', 520)
     .attr('y', 115)
@@ -217,7 +217,7 @@ svg.append('text')
     .attr('x', 90)
     .attr('y', 230)
     .attr('fill','green')
-    .text('1991 - xxxx');
+    .text('1991 - 1999');
 
 svg.append('rect')
     .attr("x", 50)
@@ -233,7 +233,7 @@ svg.append('text')
     .attr('x', 90)
     .attr('y', 270)
     .attr('fill','green')
-    .text('xxxx - xxxx');
+    .text('2000 - 2009');
 
 svg.append('rect')
     .attr("x", 50)
@@ -249,7 +249,7 @@ svg.append('text')
     .attr('x', 90)
     .attr('y', 310)
     .attr('fill','green')
-    .text('xxxx - 2017');
+    .text('2010 - 2017');
 
 svg.append('rect')
     .attr("x", 35)
@@ -298,7 +298,7 @@ svg.append('text')
     .attr('x', 90)
     .attr('y', 470)
     .attr('fill','green')
-    .text('1934 - xxxx');
+    .text('1934 - 1964');
 
 svg.append('rect')
     .attr("x", 50)
@@ -314,7 +314,7 @@ svg.append('text')
     .attr('x', 90)
     .attr('y', 510)
     .attr('fill','green')
-    .text('xxxx - xxxx');
+    .text('1965 - 1999');
 
 svg.append('rect')
     .attr("x", 50)
@@ -330,7 +330,7 @@ svg.append('text')
     .attr('x', 90)
     .attr('y', 550)
     .attr('fill','green')
-    .text('xxxx - 2017');
+    .text('2000 - 2017');
 
 svg.append('rect')
     .attr("x", 1105)
@@ -362,13 +362,16 @@ svg.append('rect')
     .attr('stroke','green')
     .attr('fill','lightGrey')
     .attr('stroke-width', 2.5)
-    .attr('id','essayBox')
+    .attr('id','essayBox');
 
 svg.append('text')
     .attr('x',1115)
     .attr('y',300)
     .attr('fill','green')
-    .text('FIGURE OUT HOW TO WRAP TEXT!');
+    .attr('id','expText')
+    .text('The history of Marijuana regulation in the United States presents a winding road, filled with side-steps and speed-bumps along the way. The Era of Prohibition began in the 1920s, and shortly thereafter every State in the Union had ratified the Uniform State Narcotic Drug Act of 1933, which outlawed the cultivation, transportation and use of marijuana for any purposed, recreational or medicinal. \n' +
+        '\n' +
+        'Over time, with changes to state demographics and ideologies, and the advancement of thought, many states began to regulate marijuana within their own borders, in direct violation of federal laws. Though this falls within the purview of states’ rights, the Federal government has continued to wage its war on drugs. This interactive map shows how far states have come in regulating the controversial plant, and how far we have to go until we are on the same page as a Nation. \n');
 
 
 
